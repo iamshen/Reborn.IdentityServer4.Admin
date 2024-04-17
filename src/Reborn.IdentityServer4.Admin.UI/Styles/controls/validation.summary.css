@@ -1,0 +1,9 @@
+﻿.validation-summary-errors {
+    -ms-border-radius: 4px;
+    background: none;
+    border: 1px solid #ffd3d3;
+    border-radius: 4px;
+    color: #ff3834;
+    margin-bottom: 15px;
+    padding-top: 9px;
+}

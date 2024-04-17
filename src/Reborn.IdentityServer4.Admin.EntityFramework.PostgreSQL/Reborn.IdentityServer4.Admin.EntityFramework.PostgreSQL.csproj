@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net8.0</TargetFramework>
+	  <Description>Entity Framework layer for the administration of the IdentityServer4 and Asp.Net Core Identity with PostrgreSQL support</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Reborn.IdentityServer4.Admin.EntityFramework.Shared\Reborn.IdentityServer4.Admin.EntityFramework.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

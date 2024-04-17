@@ -1,0 +1,10 @@
+﻿@using System.Reflection
+@using Reborn.IdentityServer4.Admin.UI.Configuration
+@{
+    var runtimeVersion = typeof(AdminConfiguration)
+        .GetTypeInfo()
+        .Assembly
+        .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
+}
+
+@runtimeVersion
