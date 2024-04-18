@@ -17,8 +17,8 @@
         <form id="SelectTheme" asp-controller="Home"
               asp-action="SelectTheme" asp-route-returnUrl="@returnUrl"
               method="post" class="form-inline justify-content-end" role="form">
-            <div class="form-group">
-                <label asp-for="@Context.Request.Cookies[ThemeHelpers.CookieThemeKey]" class="mr-2">@Localizer["Theme:"]</label>
+            <div class="form-group mb-3">
+                <label class="mb-2" asp-for="@Context.Request.Cookies[ThemeHelpers.CookieThemeKey]" class="mr-2">@Localizer["Theme:"]</label>
                 <select name="theme" onchange="this.form.submit();" class="form-control" asp-for="@selectedTheme" asp-items="themes"></select>
             </div>
         </form>

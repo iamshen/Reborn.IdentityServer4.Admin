@@ -14,12 +14,12 @@
     </div>
     <div class="col-sm-10">
         <form method="post">
-            <div class="form-group">
-                <label asp-for="Username">@Localizer["UserName"]</label>
+            <div class="form-group mb-3">
+                <label class="mb-2" asp-for="Username">@Localizer["UserName"]</label>
                 <input asp-for="Username" class="form-control" disabled/>
             </div>
-            <div class="form-group">
-                <label asp-for="Email">@Localizer["Email"]</label>
+            <div class="form-group mb-3">
+                <label class="mb-2" asp-for="Email">@Localizer["Email"]</label>
                 <input type="hidden" asp-for="IsEmailConfirmed"/>
                 @if (Model.IsEmailConfirmed)
                 {
@@ -34,56 +34,56 @@
                 }
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="PhoneNumber">@Localizer["PhoneNumber"]</label>
+            <div class="form-group mb-3">
+                <label class="mb-2" asp-for="PhoneNumber">@Localizer["PhoneNumber"]</label>
                 <input asp-for="PhoneNumber" class="form-control"/>
                 <span asp-validation-for="PhoneNumber" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
-                <label asp-for="Name">@Localizer["Name"]</label>
+            <div class="form-group mb-3">
+                <label class="mb-2" asp-for="Name">@Localizer["Name"]</label>
                 <input asp-for="Name" class="form-control"/>
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
-                <label asp-for="Website">@Localizer["Website"]</label>
+            <div class="form-group mb-3">
+                <label class="mb-2" asp-for="Website">@Localizer["Website"]</label>
                 <input asp-for="Website" class="form-control"/>
                 <span asp-validation-for="Website" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
-                <label asp-for="Profile">@Localizer["Profile"]</label>
+            <div class="form-group mb-3">
+                <label class="mb-2" asp-for="Profile">@Localizer["Profile"]</label>
                 <input asp-for="Profile" class="form-control"/>
                 <span asp-validation-for="Profile" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
-                <label asp-for="StreetAddress">@Localizer["StreetAddress"]</label>
+            <div class="form-group mb-3">
+                <label class="mb-2" asp-for="StreetAddress">@Localizer["StreetAddress"]</label>
                 <input asp-for="StreetAddress" class="form-control"/>
                 <span asp-validation-for="StreetAddress" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
-                <label asp-for="Locality">@Localizer["Locality"]</label>
+            <div class="form-group mb-3">
+                <label class="mb-2" asp-for="Locality">@Localizer["Locality"]</label>
                 <input asp-for="Locality" class="form-control"/>
                 <span asp-validation-for="Locality" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
-                <label asp-for="Region">@Localizer["Region"]</label>
+            <div class="form-group mb-3">
+                <label class="mb-2" asp-for="Region">@Localizer["Region"]</label>
                 <input asp-for="Region" class="form-control"/>
                 <span asp-validation-for="Region" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
-                <label asp-for="PostalCode">@Localizer["PostalCode"]</label>
+            <div class="form-group mb-3">
+                <label class="mb-2" asp-for="PostalCode">@Localizer["PostalCode"]</label>
                 <input asp-for="PostalCode" class="form-control"/>
                 <span asp-validation-for="PostalCode" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
-                <label asp-for="Country">@Localizer["Country"]</label>
+            <div class="form-group mb-3">
+                <label class="mb-2" asp-for="Country">@Localizer["Country"]</label>
                 <input asp-for="Country" class="form-control"/>
                 <span asp-validation-for="Country" class="text-danger"></span>
             </div>

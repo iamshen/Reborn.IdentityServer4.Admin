@@ -13,12 +13,12 @@
 </div>
 
 <div>
-    <form id="delete-user" method="post" class="form-group">
+    <form id="delete-user" method="post" class="form-group mb-3">
         <div asp-validation-summary="All" class="text-danger"></div>
         @if (Model.RequirePassword)
         {
-            <div class="form-group">
-                <label asp-for="Password">@Localizer["Password"]</label>
+            <div class="form-group mb-3">
+                <label class="mb-2" asp-for="Password">@Localizer["Password"]</label>
                 <input asp-for="Password" class="form-control"/>
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>

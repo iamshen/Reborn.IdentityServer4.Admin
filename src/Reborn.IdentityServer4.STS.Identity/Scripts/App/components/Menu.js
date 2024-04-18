@@ -1,23 +1,28 @@
 ﻿var Menu = {
     init: function() {
-
-        $(function() {
+        document.addEventListener('DOMContentLoaded', function() {
             Menu.itemClick();
         });
-
     },
 
     itemClick: function() {
-
-        $(".menu-button").click(function(e) {
-            e.preventDefault();
-
-            const isMenuVisible = $(".menu-item").is(":visible");
-            isMenuVisible ? $(".menu-item").css("display", "") : $(".menu-item").show();
+        var menuButtons = document.querySelectorAll('.menu-button');
+        menuButtons.forEach(function(button) {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                var menuItems = document.querySelectorAll('.menu-item');
+                menuItems.forEach(function(item) {
+                    var isVisible = item.style.display !== 'none' && item.style.display !== '';
+                    if (isVisible) {
+                        item.style.display = 'none';
+                    } else {
+                        item.style.display = '';
+                    }
+                });
+            });
         });
     }
-
-
 };
 
 Menu.init();

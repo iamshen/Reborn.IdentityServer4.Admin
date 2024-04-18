@@ -1,4 +1,6 @@
-﻿Holder.addTheme("thumb",
+﻿import Holder from 'holderjs';
+
+Holder.addTheme("thumb",
     {
         bg: "#55595c",
         fg: "#eceeef",

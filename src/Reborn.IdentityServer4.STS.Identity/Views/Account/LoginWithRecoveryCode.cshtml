@@ -16,8 +16,8 @@
     <div class="col-md-4">
         <form method="post">
             <input asp-for="ReturnUrl" type="hidden"/>
-            <div class="form-group">
-                <label asp-for="RecoveryCode">@Localizer["Code"]</label>
+            <div class="form-group mb-3">
+                <label class="mb-2" asp-for="RecoveryCode">@Localizer["Code"]</label>
                 <input asp-for="RecoveryCode" class="form-control" autocomplete="off" autofocus/>
                 <span asp-validation-for="RecoveryCode" class="text-danger"></span>
             </div>

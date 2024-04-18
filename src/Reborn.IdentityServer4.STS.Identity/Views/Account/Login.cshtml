@@ -24,11 +24,11 @@
                             <input type="hidden" asp-for="ReturnUrl"/>
 
                             <fieldset>
-                                <div class="form-group row">
+                                <div class="form-group row mb-3">
                                     <div class="col-sm-12">
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text" id="input-username">
+                                                <span style="font-size: 1.5rem;" class="input-group-text" id="input-username">
                                                     <i class="fa fa-user"></i>
                                                 </span>
                                             </div>
@@ -37,11 +37,11 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row">
+                                <div class="form-group row mb-3">
                                     <div class="col-sm-12">
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text" id="input-password">
+                                                <span style="font-size: 1.5rem;" class="input-group-text" id="input-password">
                                                     <span class="oi oi-lock-locked" title="Lock" aria-hidden="true"></span>
                                                 </span>
                                             </div>
@@ -52,7 +52,7 @@
 
                                 @if (Model.AllowRememberLogin)
                                 {
-                                    <div class="form-group login-remember row">
+                                    <div class="form-group login-remember row mb-3">
                                         <div class="col-sm-9">
                                             <div>
                                                 @Localizer["Remember"]
@@ -65,7 +65,7 @@
                                 }
 
                                 <!--Button-->
-                                <div class="form-group row">
+                                <div class="form-group row mb-3">
                                     <div class="col-sm-12">
                                         <button class="btn btn-primary" name="button" value="login">@Localizer["Login"]</button>
                                         <button class="btn btn-secondary" name="button" value="cancel">@Localizer["Cancel"]</button>
