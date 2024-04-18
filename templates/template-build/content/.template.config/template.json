@@ -1,15 +1,15 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Jan Skoruba",
+  "author": "Reborn",
   "classifications": [
     "Web",
     "IdentityServer4",
     "Admin"
   ],
-  "name": "Skoruba IdentityServer4 Admin",
+  "name": "Reborn IdentityServer4 Admin",
   "identity": "Reborn.IdentityServer4.Admin",
   "groupIdentity": "Reborn.IdentityServer4.Admin",
-  "shortName": "skoruba.is4admin",
+  "shortName": "reborn.is4admin",
   "tags": {
     "language": "C#",
     "type": "project"
@@ -19,29 +19,29 @@
   "symbols": {
     "title": {
       "type": "parameter",
-      "defaultValue": "Skoruba IdentityServer4 Admin",
-      "replaces": "Skoruba IdentityServer4 Admin",
+      "defaultValue": "Reborn IdentityServer4 Admin",
+      "replaces": "Reborn IdentityServer4 Admin",
       "isRequired": true,
       "description": "The title and footer of the administration"
     },
     "adminrole": {
       "type": "parameter",
-      "defaultValue": "SkorubaIdentityAdminAdministrator",
-      "replaces": "SkorubaIdentityAdminAdministrator",
+      "defaultValue": "Administrator",
+      "replaces": "Administrator",
       "isRequired": true,
       "description": "The name of admin role, that is used to authorize the administration (for example: MyAdminRole)."
     },
     "adminclientid": {
       "type": "parameter",
-      "defaultValue": "skoruba_identity_admin",
-      "replaces": "skoruba_identity_admin",
+      "defaultValue": "reborn_idsrv4_admin",
+      "replaces": "reborn_idsrv4_admin",
       "isRequired": true,
       "description": "The name of client, that is be used in the IdentityServer4"
     },
     "adminclientsecret": {
       "type": "parameter",
-      "defaultValue": "skoruba_admin_client_secret",
-      "replaces": "skoruba_admin_client_secret",
+      "defaultValue": "reborn_admin_client_secret",
+      "replaces": "reborn_admin_client_secret",
       "isRequired": true,
       "description": "The value of client secret, that is be used in the IdentityServer4"
     }

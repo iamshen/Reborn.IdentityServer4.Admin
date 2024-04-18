@@ -5,7 +5,7 @@ param([string] $packagesVersions, [string]$gitBranchName = 'dev')
 # - Use folders src and tests for project template
 # - Create db migrations for seed data
 
-$gitProject = "https://github.com/skoruba/IdentityServer4.Admin"
+$gitProject = "https://gitee.com/gold-cloud/reborn-identity-server4-admin"
 $gitProjectFolder = "Reborn.IdentityServer4.Admin"
 $templateSrc = "template-build/content/src"
 $templateRoot = "template-build/content"
@@ -36,13 +36,7 @@ if (!(Test-Path -Path $templateTests)) { mkdir $templateTests }
 Copy-Item ./$gitProjectFolder/src/* $templateSrc -recurse -force
 Copy-Item ./$gitProjectFolder/tests/* $templateTests -recurse -force
 
-# Copy Docker files
-Copy-Item ./$gitProjectFolder/docker-compose.dcproj $templateRoot -recurse -force
-Copy-Item ./$gitProjectFolder/.dockerignore $templateRoot -recurse -force
-Copy-Item ./$gitProjectFolder/docker-compose.override.yml $templateRoot -recurse -force
-Copy-Item ./$gitProjectFolder/docker-compose.vs.debug.yml $templateRoot -recurse -force
-Copy-Item ./$gitProjectFolder/docker-compose.vs.release.yml $templateRoot -recurse -force
-Copy-Item ./$gitProjectFolder/docker-compose.yml $templateRoot -recurse -force
+# Copy Music files
 Copy-Item ./$gitProjectFolder/shared $templateRoot -recurse -force
 Copy-Item ./$gitProjectFolder/package $templateRoot -recurse -force
 Copy-Item ./$gitProjectFolder/LICENSE.md $templateRoot -recurse -force
@@ -141,35 +135,35 @@ foreach ($file in $templateFiles) {
 
 
     (Get-Content $file.PSPath -raw -Encoding UTF8) |
-    Foreach-Object { $_ -replace "SkorubaIdentityServer4Admin.Shared.Configuration", "Reborn.IdentityServer4.Shared.Configuration" } |
+    Foreach-Object { $_ -replace "RebornIdentityServer4Admin.Shared.Configuration", "Reborn.IdentityServer4.Shared.Configuration" } |
     Set-Content $file.PSPath -Encoding UTF8
 
     (Get-Content $file.PSPath -raw -Encoding UTF8) |
-    Foreach-Object { $_ -replace "SkorubaIdentityServer4Admin.Admin.UI", "Reborn.IdentityServer4.Admin.UI" } |
+    Foreach-Object { $_ -replace "RebornIdentityServer4Admin.Admin.UI", "Reborn.IdentityServer4.Admin.UI" } |
     Set-Content $file.PSPath -Encoding UTF8
 
     (Get-Content $file.PSPath -raw -Encoding UTF8) |
-    Foreach-Object { $_ -replace "SkorubaIdentityServer4Admin.Admin.BusinessLogic", "Reborn.IdentityServer4.Admin.BusinessLogic" } |
+    Foreach-Object { $_ -replace "RebornIdentityServer4Admin.Admin.BusinessLogic", "Reborn.IdentityServer4.Admin.BusinessLogic" } |
     Set-Content $file.PSPath -Encoding UTF8
 
     (Get-Content $file.PSPath -raw -Encoding UTF8) |
-    Foreach-Object { $_ -replace "SkorubaIdentityServer4Admin.Admin.EntityFramework", "Reborn.IdentityServer4.Admin.EntityFramework" } |
+    Foreach-Object { $_ -replace "RebornIdentityServer4Admin.Admin.EntityFramework", "Reborn.IdentityServer4.Admin.EntityFramework" } |
     Set-Content $file.PSPath -Encoding UTF8
 
     (Get-Content $file.PSPath -raw -Encoding UTF8) |
-    Foreach-Object { $_ -replace "Reborn.IdentityServer4.Admin.EntityFramework.Shared", "SkorubaIdentityServer4Admin.Admin.EntityFramework.Shared" } |
+    Foreach-Object { $_ -replace "Reborn.IdentityServer4.Admin.EntityFramework.Shared", "RebornIdentityServer4Admin.Admin.EntityFramework.Shared" } |
     Set-Content $file.PSPath -Encoding UTF8
 
     (Get-Content $file.PSPath -raw -Encoding UTF8) |
-    Foreach-Object { $_ -replace "Reborn.IdentityServer4.Admin.EntityFramework.MySql", "SkorubaIdentityServer4Admin.Admin.EntityFramework.MySql" } |
+    Foreach-Object { $_ -replace "Reborn.IdentityServer4.Admin.EntityFramework.MySql", "RebornIdentityServer4Admin.Admin.EntityFramework.MySql" } |
     Set-Content $file.PSPath -Encoding UTF8
 
     (Get-Content $file.PSPath -raw -Encoding UTF8) |
-    Foreach-Object { $_ -replace "Reborn.IdentityServer4.Admin.EntityFramework.PostgreSQL", "SkorubaIdentityServer4Admin.Admin.EntityFramework.PostgreSQL" } |
+    Foreach-Object { $_ -replace "Reborn.IdentityServer4.Admin.EntityFramework.PostgreSQL", "RebornIdentityServer4Admin.Admin.EntityFramework.PostgreSQL" } |
     Set-Content $file.PSPath -Encoding UTF8
 
     (Get-Content $file.PSPath -raw -Encoding UTF8) |
-    Foreach-Object { $_ -replace "Reborn.IdentityServer4.Admin.EntityFramework.SqlServer", "SkorubaIdentityServer4Admin.Admin.EntityFramework.SqlServer" } |
+    Foreach-Object { $_ -replace "Reborn.IdentityServer4.Admin.EntityFramework.SqlServer", "RebornIdentityServer4Admin.Admin.EntityFramework.SqlServer" } |
     Set-Content $file.PSPath -Encoding UTF8
 }
 
