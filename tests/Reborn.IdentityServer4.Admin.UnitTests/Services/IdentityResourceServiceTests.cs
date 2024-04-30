@@ -13,7 +13,7 @@ using Reborn.IdentityServer4.Admin.EntityFramework.Repositories;
 using Reborn.IdentityServer4.Admin.EntityFramework.Repositories.Interfaces;
 using Reborn.IdentityServer4.Admin.EntityFramework.Shared.DbContexts;
 using Reborn.IdentityServer4.Admin.UnitTests.Mocks;
-using Reborn.AuditLogging.Services;
+using Reborn.IdentityServer4.AuditLogging.Services;
 using Xunit;
 
 namespace Reborn.IdentityServer4.Admin.UnitTests.Services;

@@ -57,9 +57,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Shar
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "auditLogging", "auditLogging", "{CBC54971-1FE1-44E8-AA82-C394560B4E81}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.AuditLogging", "src\Reborn.AuditLogging\Reborn.AuditLogging.csproj", "{F843A1AB-BE38-453C-9B1F-30433DFAF82B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.AuditLogging", "src\Reborn.IdentityServer4.AuditLogging\Reborn.IdentityServer4.AuditLogging.csproj", "{F843A1AB-BE38-453C-9B1F-30433DFAF82B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.AuditLogging.EntityFramework", "src\Reborn.AuditLogging.EntityFramework\Reborn.AuditLogging.EntityFramework.csproj", "{45AAF398-DA52-47A2-87D1-01B143BB92A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.AuditLogging.EntityFramework", "src\Reborn.IdentityServer4.AuditLogging.EntityFramework\Reborn.IdentityServer4.AuditLogging.EntityFramework.csproj", "{45AAF398-DA52-47A2-87D1-01B143BB92A4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E6E956E2-37F6-4D44-B8CA-BFEDBECD1C56}"
 	ProjectSection(SolutionItems) = preProject

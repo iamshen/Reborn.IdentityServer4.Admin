@@ -22,11 +22,11 @@ using Reborn.IdentityServer4.Admin.EntityFramework.Configuration.PostgreSQL;
 using Reborn.IdentityServer4.Admin.EntityFramework.Configuration.SqlServer;
 using Reborn.IdentityServer4.Admin.EntityFramework.Helpers;
 using Reborn.IdentityServer4.Admin.EntityFramework.Interfaces;
-using Reborn.AuditLogging.EntityFramework.DbContexts;
-using Reborn.AuditLogging.EntityFramework.Entities;
-using Reborn.AuditLogging.EntityFramework.Extensions;
-using Reborn.AuditLogging.EntityFramework.Repositories;
-using Reborn.AuditLogging.EntityFramework.Services;
+using Reborn.IdentityServer4.AuditLogging.EntityFramework.DbContexts;
+using Reborn.IdentityServer4.AuditLogging.EntityFramework.Entities;
+using Reborn.IdentityServer4.AuditLogging.EntityFramework.Extensions;
+using Reborn.IdentityServer4.AuditLogging.EntityFramework.Repositories;
+using Reborn.IdentityServer4.AuditLogging.EntityFramework.Services;
 
 namespace Reborn.IdentityServer4.Admin.Api.Helpers;
 

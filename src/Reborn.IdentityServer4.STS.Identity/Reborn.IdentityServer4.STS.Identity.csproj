@@ -40,7 +40,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Reborn.AuditLogging.EntityFramework\Reborn.AuditLogging.EntityFramework.csproj" />
+		<ProjectReference Include="..\Reborn.IdentityServer4.AuditLogging.EntityFramework\Reborn.IdentityServer4.AuditLogging.EntityFramework.csproj" />
 		<ProjectReference Include="..\Reborn.IdentityServer4.Admin.EntityFramework.Configuration\Reborn.IdentityServer4.Admin.EntityFramework.Configuration.csproj" />
 		<ProjectReference Include="..\Reborn.IdentityServer4.Admin.EntityFramework.Shared\Reborn.IdentityServer4.Admin.EntityFramework.Shared.csproj" />
 		<ProjectReference Include="..\Reborn.IdentityServer4.Shared.Configuration\Reborn.IdentityServer4.Shared.Configuration.csproj" />

@@ -123,7 +123,7 @@
   ],
   "postActions": [
     {
-      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "actionId": "6194F53C-D3C5-4144-9D8F-9DE221FAB9E3",
       "args": {
         "primaryOutputIndexes": "0;1;2;3;4;5;6;7"
       },
@@ -141,7 +141,7 @@
           "text": "Run 'dotnet restore'"
         }
       ],
-      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "actionId": "E5E303CC-ACC5-4602-A678-60EB5F1B0A09",
       "continueOnError": true
     }
   ]

@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Reborn.AuditLogging.EntityFramework\Reborn.AuditLogging.EntityFramework.csproj" />
+    <ProjectReference Include="..\Reborn.IdentityServer4.AuditLogging.EntityFramework\Reborn.IdentityServer4.AuditLogging.EntityFramework.csproj" />
     <ProjectReference Include="..\Reborn.IdentityServer4.Admin.EntityFramework.Extensions\Reborn.IdentityServer4.Admin.EntityFramework.Extensions.csproj" />
   </ItemGroup>
 </Project>

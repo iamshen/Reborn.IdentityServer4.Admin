@@ -1,11 +1,11 @@
 <Project>
 
   <PropertyGroup>
-    <Version>2.1.0</Version>
-    <Authors>Jan Škoruba</Authors>
+    <Version>8.4.0</Version>
+    <Authors>iamshen</Authors>
     <LangVersion>latest</LangVersion>
-    <PackageTags>IdentityServer4 Admin OpenIDConnect OAuth2 Identity</PackageTags>
-    <PackageProjectUrl>https://github.com/skoruba/IdentityServer4.Admin</PackageProjectUrl>
+    <PackageTags>Reborn IdentityServer4 Admin OpenIDConnect OAuth2 Identity</PackageTags>
+    <PackageProjectUrl>https://gitee.com/gold-cloud/reborn-identity-server4-admin</PackageProjectUrl>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>

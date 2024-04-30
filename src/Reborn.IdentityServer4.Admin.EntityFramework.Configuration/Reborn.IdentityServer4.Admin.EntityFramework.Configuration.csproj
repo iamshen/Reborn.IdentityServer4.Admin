@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Reborn.AuditLogging.EntityFramework\Reborn.AuditLogging.EntityFramework.csproj" />
+    <ProjectReference Include="..\Reborn.IdentityServer4.AuditLogging.EntityFramework\Reborn.IdentityServer4.AuditLogging.EntityFramework.csproj" />
     <ProjectReference Include="..\Reborn.IdentityServer4.Admin.EntityFramework.Identity\Reborn.IdentityServer4.Admin.EntityFramework.Identity.csproj" />
   </ItemGroup>
 

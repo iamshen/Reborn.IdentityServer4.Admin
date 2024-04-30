@@ -1,5 +1,5 @@
 ﻿using Reborn.IdentityServer4.Admin.BusinessLogic.Dtos.Grant;
-using Reborn.AuditLogging.Events;
+using Reborn.IdentityServer4.AuditLogging.Events;
 
 namespace Reborn.IdentityServer4.Admin.BusinessLogic.Events.PersistedGrant;
 

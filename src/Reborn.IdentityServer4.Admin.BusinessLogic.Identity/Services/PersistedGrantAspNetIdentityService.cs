@@ -6,7 +6,7 @@ using Reborn.IdentityServer4.Admin.BusinessLogic.Identity.Resources;
 using Reborn.IdentityServer4.Admin.BusinessLogic.Identity.Services.Interfaces;
 using Reborn.IdentityServer4.Admin.BusinessLogic.Shared.ExceptionHandling;
 using Reborn.IdentityServer4.Admin.EntityFramework.Identity.Repositories.Interfaces;
-using Reborn.AuditLogging.Services;
+using Reborn.IdentityServer4.AuditLogging.Services;
 
 namespace Reborn.IdentityServer4.Admin.BusinessLogic.Identity.Services;
 

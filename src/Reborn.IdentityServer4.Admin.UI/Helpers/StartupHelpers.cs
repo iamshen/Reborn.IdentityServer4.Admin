@@ -41,11 +41,11 @@ using Reborn.IdentityServer4.Admin.UI.ExceptionHandling;
 using Reborn.IdentityServer4.Admin.UI.Helpers.Localization;
 using Reborn.IdentityServer4.Admin.UI.Middlewares;
 using Reborn.IdentityServer4.Shared.Configuration.Authentication;
-using Reborn.AuditLogging.EntityFramework.DbContexts;
-using Reborn.AuditLogging.EntityFramework.Entities;
-using Reborn.AuditLogging.EntityFramework.Extensions;
-using Reborn.AuditLogging.EntityFramework.Repositories;
-using Reborn.AuditLogging.EntityFramework.Services;
+using Reborn.IdentityServer4.AuditLogging.EntityFramework.DbContexts;
+using Reborn.IdentityServer4.AuditLogging.EntityFramework.Entities;
+using Reborn.IdentityServer4.AuditLogging.EntityFramework.Extensions;
+using Reborn.IdentityServer4.AuditLogging.EntityFramework.Repositories;
+using Reborn.IdentityServer4.AuditLogging.EntityFramework.Services;
 
 namespace Reborn.IdentityServer4.Admin.UI.Helpers;
 

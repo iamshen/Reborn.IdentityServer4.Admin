@@ -22,4 +22,4 @@ global using Reborn.IdentityServer4.Admin.EntityFramework.Shared.Entities.Identi
 global using Reborn.IdentityServer4.Shared.Configuration.Helpers;
 global using Reborn.IdentityServer4.Shared.Dtos;
 global using Reborn.IdentityServer4.Shared.Dtos.Identity;
-global using Reborn.AuditLogging.EntityFramework.Entities;
+global using Reborn.IdentityServer4.AuditLogging.EntityFramework.Entities;

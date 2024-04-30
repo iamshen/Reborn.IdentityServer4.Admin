@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Reborn.AuditLogging.EntityFramework.DbContexts;
-using Reborn.AuditLogging.EntityFramework.Entities;
+using Reborn.IdentityServer4.AuditLogging.EntityFramework.DbContexts;
+using Reborn.IdentityServer4.AuditLogging.EntityFramework.Entities;
 
 namespace Reborn.IdentityServer4.Admin.EntityFramework.Shared.DbContexts;
 

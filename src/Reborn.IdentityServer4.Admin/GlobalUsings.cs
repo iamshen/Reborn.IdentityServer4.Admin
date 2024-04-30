@@ -10,7 +10,7 @@ global using System.Linq;
 global using System.Threading.Tasks;
 global using Reborn.IdentityServer4.Admin.EntityFramework.Configuration.Configuration;
 global using Reborn.IdentityServer4.Admin.EntityFramework.Shared.Helpers;
-global using Reborn.AuditLogging.EntityFramework.Entities;
+global using Reborn.IdentityServer4.AuditLogging.EntityFramework.Entities;
 global using Reborn.IdentityServer4.Admin.Configuration.Database;
 global using Reborn.IdentityServer4.Admin.EntityFramework.Shared.DbContexts;
 global using Reborn.IdentityServer4.Admin.EntityFramework.Shared.Entities.Identity;

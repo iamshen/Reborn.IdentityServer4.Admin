@@ -4,7 +4,7 @@ using Reborn.IdentityServer4.Admin.BusinessLogic.Dtos.Log;
 using Reborn.IdentityServer4.Admin.BusinessLogic.Mappers;
 using Reborn.IdentityServer4.Admin.BusinessLogic.Services.Interfaces;
 using Reborn.IdentityServer4.Admin.EntityFramework.Repositories.Interfaces;
-using Reborn.AuditLogging.EntityFramework.Entities;
+using Reborn.IdentityServer4.AuditLogging.EntityFramework.Entities;
 
 namespace Reborn.IdentityServer4.Admin.BusinessLogic.Services;
 

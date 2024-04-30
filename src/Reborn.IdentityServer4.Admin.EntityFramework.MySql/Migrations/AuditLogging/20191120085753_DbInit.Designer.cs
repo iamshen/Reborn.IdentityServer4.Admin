@@ -19,7 +19,7 @@ namespace Reborn.IdentityServer4.Admin.EntityFramework.MySql.Migrations.AuditLog
                 .HasAnnotation("ProductVersion", "3.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("Reborn.AuditLogging.EntityFramework.Entities.AuditLog", b =>
+            modelBuilder.Entity("Reborn.IdentityServer4.AuditLogging.EntityFramework.Entities.AuditLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
