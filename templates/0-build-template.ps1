@@ -5,7 +5,7 @@ param([string] $packagesVersions, [string]$gitBranchName = 'master')
 # - 项目模板使用 src 和 tests 文件夹
 # - 为 EF Core 种子数据创建数据库迁移
 
-$gitProject = "https://gitee.com/gold-cloud/reborn-identity-server4-admin"
+$gitProject = "https://github.com/iamshen/Reborn.IdentityServer4.Admin"
 $gitProjectFolder = "Reborn.IdentityServer4.Admin"
 $templateRoot = "template-build/content"
 $templateSrc = "template-build/content/src"
