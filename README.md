@@ -3,7 +3,7 @@
 # Reborn.IdentityServer4.Admin
 
 
-![CI](https://github.com/iamshen/Reborn.IdentityServer4.Admin/actions/workflows/CI/badge.svg)
+![CI](https://github.com/iamshen/Reborn.IdentityServer4.Admin/workflows/CI/badge.svg)
 [![NuGet](https://img.shields.io/nuget/dt/Reborn.IdentityServer4.Admin.Templates.svg)](https://www.nuget.org/packages/Reborn.IdentityServer4.Admin.Templates) 
 [![NuGet](https://img.shields.io/nuget/vpre/Reborn.IdentityServer4.Admin.Templates.svg)](https://www.nuget.org/packages/Reborn.IdentityServer4.Admin.Templates)
 
