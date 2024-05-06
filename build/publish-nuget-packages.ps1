@@ -10,6 +10,6 @@ dotnet nuget push ./packages/Reborn.IdentityServer4.Admin.EntityFramework.Identi
 dotnet nuget push ./packages/Reborn.IdentityServer4.Admin.EntityFramework.Shared.$version.nupkg -k $key -s https://api.nuget.org/v3/index.json
 
 dotnet nuget push ./packages/Reborn.IdentityServer4.Admin.EntityFramework.Configuration.$version.nupkg -k $key -s https://api.nuget.org/v3/index.json
-dotnet nuget push ./packages/Reborn.IdentityServer4.Shared.Configuration.$version.nupkg -k $key -s https://api.nuget.org/v3/index.json
+dotnet nuget push ./packages/Reborn.IdentityServer4.Admin.Shared.Configuration.$version.nupkg -k $key -s https://api.nuget.org/v3/index.json
 
 dotnet nuget push ./packages/Reborn.IdentityServer4.Admin.UI.$version.nupkg -k $key -s https://api.nuget.org/v3/index.json

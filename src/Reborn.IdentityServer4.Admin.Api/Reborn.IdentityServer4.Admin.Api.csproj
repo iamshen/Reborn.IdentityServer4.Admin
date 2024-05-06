@@ -44,8 +44,8 @@
     <ProjectReference Include="..\Reborn.IdentityServer4.Admin.EntityFramework.MySql\Reborn.IdentityServer4.Admin.EntityFramework.MySql.csproj" />
     <ProjectReference Include="..\Reborn.IdentityServer4.Admin.EntityFramework.PostgreSQL\Reborn.IdentityServer4.Admin.EntityFramework.PostgreSQL.csproj" />
     <ProjectReference Include="..\Reborn.IdentityServer4.Admin.EntityFramework.SqlServer\Reborn.IdentityServer4.Admin.EntityFramework.SqlServer.csproj" />
-    <ProjectReference Include="..\Reborn.IdentityServer4.Shared.Configuration\Reborn.IdentityServer4.Shared.Configuration.csproj" />
-    <ProjectReference Include="..\Reborn.IdentityServer4.Shared\Reborn.IdentityServer4.Shared.csproj" />
+    <ProjectReference Include="..\Reborn.IdentityServer4.Admin.Shared.Configuration\Reborn.IdentityServer4.Admin.Shared.Configuration.csproj" />
+    <ProjectReference Include="..\Reborn.IdentityServer4.Admin.Shared\Reborn.IdentityServer4.Admin.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

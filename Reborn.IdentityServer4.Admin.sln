@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admin.BusinessLogic", "src\Reborn.IdentityServer4.Admin.BusinessLogic\Reborn.IdentityServer4.Admin.BusinessLogic.csproj", "{491B30A8-D4A1-42E8-8DEE-4093E0E45C36}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.STS.Identity", "src\Reborn.IdentityServer4.STS.Identity\Reborn.IdentityServer4.STS.Identity.csproj", "{72F17B1A-88D9-47FD-AA35-1C700E51CD0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admin.STS.Identity", "src\Reborn.IdentityServer4.Admin.STS.Identity\Reborn.IdentityServer4.Admin.STS.Identity.csproj", "{72F17B1A-88D9-47FD-AA35-1C700E51CD0E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admin.EntityFramework.Identity", "src\Reborn.IdentityServer4.Admin.EntityFramework.Identity\Reborn.IdentityServer4.Admin.EntityFramework.Identity.csproj", "{2FAECDE3-8D21-4C36-BFF1-3F7C1A56F0D4}"
 EndProject
@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admin.BusinessLogic.Identity", "src\Reborn.IdentityServer4.Admin.BusinessLogic.Identity\Reborn.IdentityServer4.Admin.BusinessLogic.Identity.csproj", "{CA63CC7B-BE27-4737-AE91-42E43F729A1E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.STS.Identity.IntegrationTests", "tests\Reborn.IdentityServer4.STS.Identity.IntegrationTests\Reborn.IdentityServer4.STS.Identity.IntegrationTests.csproj", "{83319150-92D2-408C-A944-52DBE6AB8B37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admin.STS.Identity.IntegrationTests", "tests\Reborn.IdentityServer4.Admin.STS.Identity.IntegrationTests\Reborn.IdentityServer4.Admin.STS.Identity.IntegrationTests.csproj", "{83319150-92D2-408C-A944-52DBE6AB8B37}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admin.Api", "src\Reborn.IdentityServer4.Admin.Api\Reborn.IdentityServer4.Admin.Api.csproj", "{8F112368-2E45-4C3A-922E-85AB6056F559}"
 EndProject
@@ -47,19 +47,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admin.Api.IntegrationTests", "tests\Reborn.IdentityServer4.Admin.Api.IntegrationTests\Reborn.IdentityServer4.Admin.Api.IntegrationTests.csproj", "{4D123ACB-ACBD-4E40-AE6B-1B0F79D703B0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Shared", "src\Reborn.IdentityServer4.Shared\Reborn.IdentityServer4.Shared.csproj", "{61B285F0-EE06-4AEE-AAF3-71492CBD11C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admin.Shared", "src\Reborn.IdentityServer4.Admin.Shared\Reborn.IdentityServer4.Admin.Shared.csproj", "{61B285F0-EE06-4AEE-AAF3-71492CBD11C5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admin.UI", "src\Reborn.IdentityServer4.Admin.UI\Reborn.IdentityServer4.Admin.UI.csproj", "{6DD24C2C-0FB5-4C37-8B42-5DACA0FDE4EC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admin.EntityFramework.Configuration", "src\Reborn.IdentityServer4.Admin.EntityFramework.Configuration\Reborn.IdentityServer4.Admin.EntityFramework.Configuration.csproj", "{45FB23BE-A7F9-4172-8868-B5E387007644}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Shared.Configuration", "src\Reborn.IdentityServer4.Shared.Configuration\Reborn.IdentityServer4.Shared.Configuration.csproj", "{D49A2D61-AEEB-457C-B3BA-D1322EB2F4EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admin.Shared.Configuration", "src\Reborn.IdentityServer4.Admin.Shared.Configuration\Reborn.IdentityServer4.Admin.Shared.Configuration.csproj", "{D49A2D61-AEEB-457C-B3BA-D1322EB2F4EC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "auditLogging", "auditLogging", "{CBC54971-1FE1-44E8-AA82-C394560B4E81}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.AuditLogging", "src\Reborn.IdentityServer4.AuditLogging\Reborn.IdentityServer4.AuditLogging.csproj", "{F843A1AB-BE38-453C-9B1F-30433DFAF82B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admin.AuditLogging", "src\Reborn.IdentityServer4.Admin.AuditLogging\Reborn.IdentityServer4.Admin.AuditLogging.csproj", "{F843A1AB-BE38-453C-9B1F-30433DFAF82B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.AuditLogging.EntityFramework", "src\Reborn.IdentityServer4.AuditLogging.EntityFramework\Reborn.IdentityServer4.AuditLogging.EntityFramework.csproj", "{45AAF398-DA52-47A2-87D1-01B143BB92A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework", "src\Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework\Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.csproj", "{45AAF398-DA52-47A2-87D1-01B143BB92A4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E6E956E2-37F6-4D44-B8CA-BFEDBECD1C56}"
 	ProjectSection(SolutionItems) = preProject

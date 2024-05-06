@@ -23,7 +23,7 @@ The application is written in the **Asp.Net Core MVC - using .NET 8**
 - Set Startup projects:
   - Reborn.IdentityServer4.Admin
   - Reborn.IdentityServer4.Admin.Api
-  - Reborn.IdentityServer4.STS.Identity
+  - Reborn.IdentityServer4.Admin.STS.Identity
 
 ## Configuration of Administration for Deployment
 
@@ -299,7 +299,7 @@ Final audit log is available in the table `dbo.AuditLog`.
 
 ### Login Configuration
 
-- In `Reborn.IdentityServer4.STS.Identity` - in `appsettings.json` is possible to specify which column will be used for login (`Username` or `Email`):
+- In `Reborn.IdentityServer4.Admin.STS.Identity` - in `appsettings.json` is possible to specify which column will be used for login (`Username` or `Email`):
 
 ```
   "LoginConfiguration": {
@@ -317,7 +317,7 @@ or using `Email`:
 
 ### Register Configuration
 
-- In `Reborn.IdentityServer4.STS.Identity` - in `appsettings.json` is possible to disable user registration (`default: true`):
+- In `Reborn.IdentityServer4.Admin.STS.Identity` - in `appsettings.json` is possible to disable user registration (`default: true`):
 
 ```
  "RegisterConfiguration": {
@@ -345,7 +345,7 @@ or using `Email`:
 
 ## How to configure an external provider in STS
 
-- In `Reborn.IdentityServer4.STS.Identity/Helpers/StartupHelpers.cs` - is method called `AddExternalProviders` which contains the example with `GitHub`, `AzureAD` configured in `appsettings.json`:
+- In `Reborn.IdentityServer4.Admin.STS.Identity/Helpers/StartupHelpers.cs` - is method called `AddExternalProviders` which contains the example with `GitHub`, `AzureAD` configured in `appsettings.json`:
 
 ```
 "ExternalProvidersConfiguration": {
@@ -455,7 +455,7 @@ Integration tests use StartupTest class which is pre-configured with:
 
 - STS:
 
-  - `Reborn.IdentityServer4.STS.Identity` - project that contains the instance of IdentityServer4 and combine these samples - [Quickstart UI for the IdentityServer4 with Asp.Net Core Identity and EF Core storage](https://github.com/IdentityServer/IdentityServer4/tree/master/samples/Quickstarts/9_Combined_AspId_and_EFStorage) and [damienbod - IdentityServer4 and Identity template](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate)
+  - `Reborn.IdentityServer4.Admin.STS.Identity` - project that contains the instance of IdentityServer4 and combine these samples - [Quickstart UI for the IdentityServer4 with Asp.Net Core Identity and EF Core storage](https://github.com/IdentityServer/IdentityServer4/tree/master/samples/Quickstarts/9_Combined_AspId_and_EFStorage) and [damienbod - IdentityServer4 and Identity template](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate)
 
 - Admin UI Api:
 
@@ -473,9 +473,9 @@ Integration tests use StartupTest class which is pre-configured with:
 
   - `Reborn.IdentityServer4.Admin.BusinessLogic.Shared` - project that contains shared Dtos and ExceptionHandling for the Business Logic layer of the IdentityServer4 and Asp.Net Core Identity
 
-  - `Reborn.IdentityServer4.Shared` - Shared common Identity DTOS for Admin UI, Admin UI Api and STS
+  - `Reborn.IdentityServer4.Admin.Shared` - Shared common Identity DTOS for Admin UI, Admin UI Api and STS
 
-  - `Reborn.IdentityServer4.Shared.Configuration` - Shared common layer for Admin UI, Admin UI Api and STS
+  - `Reborn.IdentityServer4.Admin.Shared.Configuration` - Shared common layer for Admin UI, Admin UI Api and STS
 
   - `Reborn.IdentityServer4.Admin.EntityFramework` - EF Core data layer that contains Entities for the IdentityServer4
 

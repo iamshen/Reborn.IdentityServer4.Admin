@@ -5,8 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Reborn.IdentityServer4.Admin.EntityFramework.Configuration.Configuration;
 using Reborn.IdentityServer4.Admin.EntityFramework.Interfaces;
-using Reborn.IdentityServer4.AuditLogging.EntityFramework.DbContexts;
-using Reborn.IdentityServer4.AuditLogging.EntityFramework.Entities;
+using Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.DbContexts;
+using Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.Entities;
 
 namespace Reborn.IdentityServer4.Admin.EntityFramework.Configuration.PostgreSQL;
 

@@ -1,0 +1,10 @@
+﻿@using System.Reflection
+@using Reborn.IdentityServer4.Admin.STS.Identity
+@{
+    var runtimeVersion = typeof(Program)
+        .GetTypeInfo()
+        .Assembly
+        .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
+}
+
+@runtimeVersion

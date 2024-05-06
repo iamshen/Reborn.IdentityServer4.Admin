@@ -21,7 +21,7 @@ namespace Reborn.IdentityServer4.Admin.EntityFramework.PostgreSQL.Migrations.Aud
                 .HasAnnotation("ProductVersion", "3.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
-            modelBuilder.Entity("Reborn.IdentityServer4.AuditLogging.EntityFramework.Entities.AuditLog", b =>
+            modelBuilder.Entity("Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.Entities.AuditLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

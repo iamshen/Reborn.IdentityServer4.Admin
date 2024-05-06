@@ -2,7 +2,10 @@
     "cSpell.words": [
         "adminclientid",
         "adminclientsecret",
+        "adminemail",
+        "adminpassword",
         "adminrole",
+        "iamshen",
         "idsrv"
     ]
 }

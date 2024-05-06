@@ -67,5 +67,5 @@ dotnet.exe new install $templateLocalName
 #####################################
 # Step 4
 Write-Host "创建用于固定项目名称的模板"
-dotnet new reborn.is4admin --name SampleIdentityServer --title "Sample IdentityServer4 Admin" --adminrole Administrator --adminclientid sample_identity_admin --adminclientsecret sample_admin_client_secret
+dotnet new reborn.is4admin --name SampleIdentityServer --title "Sample IdentityServer4 Admin" --adminrole Administrator --adminclientid sample_identity_admin --adminclientsecret sample_admin_client_secret --force
 

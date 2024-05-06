@@ -5,7 +5,7 @@
 cd src/Reborn.IdentityServer4.Admin
 npm install
 
-cd src/Reborn.IdentityServer4.STS.Identity
+cd src/Reborn.IdentityServer4.Admin.STS.Identity
 npm install
 ```
 

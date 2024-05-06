@@ -12,7 +12,7 @@ using SkorubaIdentityServer4Admin.STS.Identity.Configuration.Constants;
 using SkorubaIdentityServer4Admin.STS.Identity.Configuration.Interfaces;
 using SkorubaIdentityServer4Admin.STS.Identity.Helpers;
 using System;
-using Reborn.IdentityServer4.Shared.Configuration.Helpers;
+using Reborn.IdentityServer4.Admin.Shared.Configuration.Helpers;
 
 namespace SkorubaIdentityServer4Admin.STS.Identity
 {

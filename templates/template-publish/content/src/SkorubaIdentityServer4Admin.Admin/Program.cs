@@ -10,7 +10,7 @@ using Reborn.IdentityServer4.Admin.EntityFramework.Configuration.Configuration;
 using SkorubaIdentityServer4Admin.Admin.EntityFramework.Shared.DbContexts;
 using SkorubaIdentityServer4Admin.Admin.EntityFramework.Shared.Entities.Identity;
 using SkorubaIdentityServer4Admin.Admin.EntityFramework.Shared.Helpers;
-using Reborn.IdentityServer4.Shared.Configuration.Helpers;
+using Reborn.IdentityServer4.Admin.Shared.Configuration.Helpers;
 
 namespace SkorubaIdentityServer4Admin.Admin
 {

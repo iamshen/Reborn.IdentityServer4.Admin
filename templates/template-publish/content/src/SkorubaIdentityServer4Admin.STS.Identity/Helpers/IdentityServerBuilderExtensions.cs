@@ -3,8 +3,8 @@ using System;
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.Extensions.Configuration;
-using Reborn.IdentityServer4.Shared.Configuration.Configuration.Common;
-using Reborn.IdentityServer4.Shared.Configuration.Helpers;
+using Reborn.IdentityServer4.Admin.Shared.Configuration.Configuration.Common;
+using Reborn.IdentityServer4.Admin.Shared.Configuration.Helpers;
 
 namespace SkorubaIdentityServer4Admin.STS.Identity.Helpers
 {

@@ -10,7 +10,7 @@ using IdentityServer4.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
-using Reborn.IdentityServer4.Shared.Configuration.Helpers;
+using Reborn.IdentityServer4.Admin.Shared.Configuration.Helpers;
 using SkorubaIdentityServer4Admin.STS.Identity.Helpers;
 using SkorubaIdentityServer4Admin.STS.Identity.ViewModels.Home;
 

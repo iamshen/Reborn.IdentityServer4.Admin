@@ -49,7 +49,7 @@ git clone https://github.com/skoruba/IdentityServer4.Admin
 By default everything is configured for Microsoft SQL Server, but fortunately it's pretty easy to change.
 
 ## Replace connection strings
-First change connection strings in `src/Reborn.IdentityServer4.Admin/appsettings.json` and  `src/Reborn.IdentityServer4.STS.Identity/appsettings.json` and replace them with following connection string:
+First change connection strings in `src/Reborn.IdentityServer4.Admin/appsettings.json` and  `src/Reborn.IdentityServer4.Admin.STS.Identity/appsettings.json` and replace them with following connection string:
 
 ```
 Server=localhost; User Id=postgres; Database=is4admin; Port=5432; Password=postgres; SSL Mode=Prefer; Trust Server Certificate=true
@@ -60,7 +60,7 @@ Server=localhost; User Id=postgres; Database=is4admin; Port=5432; Password=postg
 It is possible to change database provider in `appsettings.json` in following projects:
  - Reborn.IdentityServer4.Admin
  - Reborn.IdentityServer4.Admin.Api
- - Reborn.IdentityServer4.STS.Identity
+ - Reborn.IdentityServer4.Admin.STS.Identity
  
 Change parameter `ProviderType` in section to:
 ```
@@ -73,7 +73,7 @@ Change parameter `ProviderType` in section to:
 
 ## Run STS and Admin
 
-First run STS in `src/Reborn.IdentityServer4.STS.Identity` launch:
+First run STS in `src/Reborn.IdentityServer4.Admin.STS.Identity` launch:
 
 ```
 dotnet run

@@ -43,12 +43,11 @@
     <ProjectReference Include="..\Reborn.IdentityServer4.Admin.EntityFramework.PostgreSQL\Reborn.IdentityServer4.Admin.EntityFramework.PostgreSQL.csproj" />
     <ProjectReference Include="..\Reborn.IdentityServer4.Admin.EntityFramework.SqlServer\Reborn.IdentityServer4.Admin.EntityFramework.SqlServer.csproj" />
     <ProjectReference Include="..\Reborn.IdentityServer4.Admin.UI\Reborn.IdentityServer4.Admin.UI.csproj" />
-    <ProjectReference Include="..\Reborn.IdentityServer4.Shared\Reborn.IdentityServer4.Shared.csproj" />
+    <ProjectReference Include="..\Reborn.IdentityServer4.Admin.Shared\Reborn.IdentityServer4.Admin.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Helpers\" />
-    <Folder Include="Log\" />
   </ItemGroup>
 
   <ItemGroup>

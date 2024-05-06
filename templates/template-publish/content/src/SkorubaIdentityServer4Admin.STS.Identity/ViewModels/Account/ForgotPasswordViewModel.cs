@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Reborn.IdentityServer4.Shared.Configuration.Configuration.Identity;
+using Reborn.IdentityServer4.Admin.Shared.Configuration.Configuration.Identity;
 
 namespace SkorubaIdentityServer4Admin.STS.Identity.ViewModels.Account
 {

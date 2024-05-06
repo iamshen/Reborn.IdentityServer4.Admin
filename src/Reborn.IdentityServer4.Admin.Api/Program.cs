@@ -1,4 +1,4 @@
-﻿using Reborn.IdentityServer4.Shared.ModuleInitializer;
+﻿using Reborn.IdentityServer4.Admin.Shared.ModuleInitializer;
 
 var builder = WebApplication.CreateBuilder();
 

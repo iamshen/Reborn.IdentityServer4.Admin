@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
-using Reborn.IdentityServer4.AuditLogging.Events;
+using Reborn.IdentityServer4.Admin.AuditLogging.Events;
 
 namespace Reborn.IdentityServer4.Admin.Api.AuditLogging;
 

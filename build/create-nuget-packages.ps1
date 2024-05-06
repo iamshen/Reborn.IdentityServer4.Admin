@@ -4,7 +4,7 @@ $packagesOutput = ".\packages"
 dotnet pack .\..\src\Reborn.IdentityServer4.Admin.BusinessLogic\Reborn.IdentityServer4.Admin.BusinessLogic.csproj -c Release -o $packagesOutput
 dotnet pack .\..\src\Reborn.IdentityServer4.Admin.BusinessLogic.Identity\Reborn.IdentityServer4.Admin.BusinessLogic.Identity.csproj -c Release -o $packagesOutput
 dotnet pack .\..\src\Reborn.IdentityServer4.Admin.BusinessLogic.Shared\Reborn.IdentityServer4.Admin.BusinessLogic.Shared.csproj -c Release -o $packagesOutput
-dotnet pack .\..\src\Reborn.IdentityServer4.Shared.Configuration\Reborn.IdentityServer4.Shared.Configuration.csproj -c Release -o $packagesOutput
+dotnet pack .\..\src\Reborn.IdentityServer4.Admin.Shared.Configuration\Reborn.IdentityServer4.Admin.Shared.Configuration.csproj -c Release -o $packagesOutput
 
 # EF
 dotnet pack .\..\src\Reborn.IdentityServer4.Admin.EntityFramework\Reborn.IdentityServer4.Admin.EntityFramework.csproj -c Release -o $packagesOutput

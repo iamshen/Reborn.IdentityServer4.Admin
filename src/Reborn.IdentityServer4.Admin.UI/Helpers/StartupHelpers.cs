@@ -40,12 +40,12 @@ using Reborn.IdentityServer4.Admin.UI.Configuration.Constants;
 using Reborn.IdentityServer4.Admin.UI.ExceptionHandling;
 using Reborn.IdentityServer4.Admin.UI.Helpers.Localization;
 using Reborn.IdentityServer4.Admin.UI.Middlewares;
-using Reborn.IdentityServer4.Shared.Configuration.Authentication;
-using Reborn.IdentityServer4.AuditLogging.EntityFramework.DbContexts;
-using Reborn.IdentityServer4.AuditLogging.EntityFramework.Entities;
-using Reborn.IdentityServer4.AuditLogging.EntityFramework.Extensions;
-using Reborn.IdentityServer4.AuditLogging.EntityFramework.Repositories;
-using Reborn.IdentityServer4.AuditLogging.EntityFramework.Services;
+using Reborn.IdentityServer4.Admin.Shared.Configuration.Authentication;
+using Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.DbContexts;
+using Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.Entities;
+using Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.Extensions;
+using Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.Repositories;
+using Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.Services;
 
 namespace Reborn.IdentityServer4.Admin.UI.Helpers;
 

@@ -18,7 +18,7 @@ using Reborn.IdentityServer4.Admin.EntityFramework.Identity.Repositories.Interfa
 using Reborn.IdentityServer4.Admin.EntityFramework.Shared.DbContexts;
 using Reborn.IdentityServer4.Admin.EntityFramework.Shared.Entities.Identity;
 using Reborn.IdentityServer4.Admin.UnitTests.Mocks;
-using Reborn.IdentityServer4.AuditLogging.Services;
+using Reborn.IdentityServer4.Admin.AuditLogging.Services;
 using Xunit;
 
 namespace Reborn.IdentityServer4.Admin.UnitTests.Services;

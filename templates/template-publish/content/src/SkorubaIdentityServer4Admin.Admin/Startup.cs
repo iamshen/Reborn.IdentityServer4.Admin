@@ -11,7 +11,7 @@ using SkorubaIdentityServer4Admin.Admin.Configuration.Database;
 using SkorubaIdentityServer4Admin.Admin.EntityFramework.Shared.DbContexts;
 using SkorubaIdentityServer4Admin.Admin.EntityFramework.Shared.Entities.Identity;
 using SkorubaIdentityServer4Admin.Admin.Helpers;
-using Reborn.IdentityServer4.Shared.Configuration.Helpers;
+using Reborn.IdentityServer4.Admin.Shared.Configuration.Helpers;
 using SkorubaIdentityServer4Admin.Shared.Dtos;
 using SkorubaIdentityServer4Admin.Shared.Dtos.Identity;
 

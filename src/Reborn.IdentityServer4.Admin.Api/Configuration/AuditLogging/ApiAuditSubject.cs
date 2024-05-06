@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Reborn.IdentityServer4.Admin.Api.Configuration;
-using Reborn.IdentityServer4.AuditLogging.Constants;
-using Reborn.IdentityServer4.AuditLogging.Events;
+using Reborn.IdentityServer4.Admin.AuditLogging.Constants;
+using Reborn.IdentityServer4.Admin.AuditLogging.Events;
 
 namespace Reborn.IdentityServer4.Admin.Api.AuditLogging;
 

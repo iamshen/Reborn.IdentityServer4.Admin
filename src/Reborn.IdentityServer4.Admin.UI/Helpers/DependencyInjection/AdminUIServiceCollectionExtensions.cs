@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Reborn.IdentityServer4.Admin.BusinessLogic.Identity.Dtos.Identity;
 using Reborn.IdentityServer4.Admin.EntityFramework.Interfaces;
-using Reborn.IdentityServer4.Shared.Configuration.Helpers;
-using Reborn.IdentityServer4.AuditLogging.EntityFramework.DbContexts;
-using Reborn.IdentityServer4.AuditLogging.EntityFramework.Entities;
+using Reborn.IdentityServer4.Admin.Shared.Configuration.Helpers;
+using Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.DbContexts;
+using Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.Entities;
 using static Reborn.IdentityServer4.Admin.UI.Helpers.StartupHelpers;
 
 namespace Microsoft.Extensions.DependencyInjection;

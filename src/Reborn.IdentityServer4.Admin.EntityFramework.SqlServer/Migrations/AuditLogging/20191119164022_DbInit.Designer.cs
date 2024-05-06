@@ -21,7 +21,7 @@ namespace Reborn.IdentityServer4.Admin.EntityFramework.SqlServer.Migrations.Audi
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Reborn.IdentityServer4.AuditLogging.EntityFramework.Entities.AuditLog", b =>
+            modelBuilder.Entity("Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.Entities.AuditLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

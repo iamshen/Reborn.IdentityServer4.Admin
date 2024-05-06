@@ -1,4 +1,4 @@
-﻿using Reborn.IdentityServer4.Shared.Configuration.Configuration.Identity;
+﻿using Reborn.IdentityServer4.Admin.Shared.Configuration.Configuration.Identity;
 using SkorubaIdentityServer4Admin.STS.Identity.Configuration.Interfaces;
 
 namespace SkorubaIdentityServer4Admin.STS.Identity.Configuration

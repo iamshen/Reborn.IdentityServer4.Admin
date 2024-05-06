@@ -24,7 +24,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
-using Reborn.IdentityServer4.Shared.Configuration.Configuration.Identity;
+using Reborn.IdentityServer4.Admin.Shared.Configuration.Configuration.Identity;
 using SkorubaIdentityServer4Admin.STS.Identity.Configuration;
 using SkorubaIdentityServer4Admin.STS.Identity.Helpers;
 using SkorubaIdentityServer4Admin.STS.Identity.Helpers.Localization;

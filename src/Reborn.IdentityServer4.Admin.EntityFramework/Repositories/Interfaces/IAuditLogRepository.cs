@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Reborn.IdentityServer4.Admin.EntityFramework.Extensions.Common;
-using Reborn.IdentityServer4.AuditLogging.EntityFramework.Entities;
+using Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.Entities;
 
 namespace Reborn.IdentityServer4.Admin.EntityFramework.Repositories.Interfaces;
 

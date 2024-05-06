@@ -1,6 +1,6 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Reborn",
+  "author": "iamshen",
   "classifications": [
     "Web",
     "IdentityServer4",
@@ -15,7 +15,7 @@
     "language": "C#",
     "type": "project"
   },
-  "sourceName": "Reborn.IdentityServer4",
+  "sourceName": "Reborn.IdentityServer4.Admin",
   "preferNameDirectory": true,
   "symbols": {
     "title": {
@@ -52,7 +52,7 @@
       "path": "src/Reborn.IdentityServer4.Admin/Reborn.IdentityServer4.Admin.csproj"
     },
     {
-      "path": "src/Reborn.IdentityServer4.STS.Identity/Reborn.IdentityServer4.STS.Identity.csproj"
+      "path": "src/Reborn.IdentityServer4.Admin.STS.Identity/Reborn.IdentityServer4.Admin.STS.Identity.csproj"
     },
     {
       "path": "src/Reborn.IdentityServer4.Admin.Api/Reborn.IdentityServer4.Admin.Api.csproj"
@@ -70,18 +70,18 @@
       "path": "src/Reborn.IdentityServer4.Admin.EntityFramework.SqlServer/Reborn.IdentityServer4.Admin.EntityFramework.SqlServer.csproj"
     },
     {
-      "path": "src/Reborn.IdentityServer4.Shared/Reborn.IdentityServer4.Shared.csproj"
+      "path": "src/Reborn.IdentityServer4.Admin.Shared/Reborn.IdentityServer4.Admin.Shared.csproj"
     },
     {
-      "path": "src/Reborn.IdentityServer4.AuditLogging/Reborn.IdentityServer4.AuditLogging.csproj"
+      "path": "src/Reborn.IdentityServer4.Admin.AuditLogging/Reborn.IdentityServer4.Admin.AuditLogging.csproj"
     },
     {
-      "path": "src/Reborn.IdentityServer4.AuditLogging.EntityFramework/Reborn.IdentityServer4.AuditLogging.EntityFramework.csproj"
+      "path": "src/Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework/Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.csproj"
     }
   ],
   "postActions": [
     {
-      "actionId": "6194F53C-D3C5-4144-9D8F-9DE221FAB9E3",
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
       "args": {
         "primaryOutputIndexes": "0;1;2;3;4;5;6;7;8;9"
       },
@@ -99,7 +99,7 @@
           "text": "Run 'dotnet restore'"
         }
       ],
-      "actionId": "E5E303CC-ACC5-4602-A678-60EB5F1B0A09",
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
       "continueOnError": true
     }
   ]

@@ -14,7 +14,7 @@ using Reborn.IdentityServer4.Admin.BusinessLogic.Shared.Dtos.Common;
 using Reborn.IdentityServer4.Admin.BusinessLogic.Shared.ExceptionHandling;
 using Reborn.IdentityServer4.Admin.EntityFramework.Helpers;
 using Reborn.IdentityServer4.Admin.EntityFramework.Repositories.Interfaces;
-using Reborn.IdentityServer4.AuditLogging.Services;
+using Reborn.IdentityServer4.Admin.AuditLogging.Services;
 
 namespace Reborn.IdentityServer4.Admin.BusinessLogic.Services;
 

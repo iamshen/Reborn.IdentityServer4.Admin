@@ -1,28 +1,29 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Jan Skoruba",
+  "author": "iamshen",
   "classifications": [
     "Web",
     "IdentityServer4",
-    "Admin"
+    "Admin",
+    ".Net8"
   ],
-  "name": "Skoruba IdentityServer4 Admin",
+  "name": "Reborn IdentityServer4 Admin",
   "identity": "Reborn.IdentityServer4.Admin",
   "groupIdentity": "Reborn.IdentityServer4.Admin",
-  "shortName": "skoruba.is4admin",
+  "shortName": "reborn.is4admin",
   "tags": {
     "language": "C#",
     "type": "project"
   },
-  "sourceName": "SkorubaIdentityServer4Admin",
+  "sourceName": "Reborn.IdentityServer4",
   "preferNameDirectory": true,
   "symbols": {
     "title": {
       "type": "parameter",
-      "defaultValue": "Skoruba IdentityServer4 Admin",
-      "replaces": "Skoruba IdentityServer4 Admin",
+      "defaultValue": "Reborn IdentityServer4 Admin",
+      "replaces": "Reborn IdentityServer4 Admin",
       "isRequired": true,
-      "description": "The title and footer of the Admin UI"
+      "description": "The title and footer of the administration"
     },
     "adminpassword": {
       "type": "parameter",
@@ -40,92 +41,63 @@
     },
     "adminrole": {
       "type": "parameter",
-      "defaultValue": "SkorubaIdentityAdminAdministrator",
-      "replaces": "SkorubaIdentityAdminAdministrator",
+      "defaultValue": "Administrator",
+      "replaces": "Administrator",
       "isRequired": true,
       "description": "The name of admin role, that is used to authorize the administration (for example: MyAdminRole)."
     },
     "adminclientid": {
       "type": "parameter",
-      "defaultValue": "skoruba_identity_admin",
-      "replaces": "skoruba_identity_admin",
+      "defaultValue": "reborn_idsrv4_admin",
+      "replaces": "reborn_idsrv4_admin",
       "isRequired": true,
-      "description": "The name of client, that is used in the IdentityServer4"
+      "description": "The name of client, that is be used in the IdentityServer4"
     },
     "adminclientsecret": {
       "type": "parameter",
-      "defaultValue": "skoruba_admin_client_secret",
-      "replaces": "skoruba_admin_client_secret",
+      "defaultValue": "reborn_admin_client_secret",
+      "replaces": "reborn_admin_client_secret",
       "isRequired": true,
-      "description": "The value of client secret, that is used in the IdentityServer4"
-    },
-    "dockersupport": {
-      "type": "parameter",
-      "datatype": "bool",
-      "defaultValue": "false",
-      "isRequired": true,
-      "description": "Add docker support for Admin UI"
+      "description": "The value of client secret, that is be used in the IdentityServer4"
     }
   },
-  "sources": [
-    {
-      "modifiers": [
-        {
-          "condition": "(!dockersupport)",
-          "exclude": [
-            "shared/**",
-            "docker-compose.dcproj",
-            ".dockerignore",
-            "docker-compose.yml",
-            "docker-compose.override.yml",
-            "docker-compose.vs.debug.yml",
-            "docker-compose.vs.release.yml",
-            "src/SkorubaIdentityServer4Admin.Admin/Dockerfile",
-            "src/SkorubaIdentityServer4Admin.Admin.Api/Dockerfile",
-            "src/SkorubaIdentityServer4Admin.STS.Identity/Dockerfile",
-            "SkorubaIdentityServer4Admin.AdminUI.sln"            
-          ]
-        },
-        {
-          "condition": "(dockersupport)",
-          "exclude": [
-            "SkorubaIdentityServer4Admin.Admin.sln"
-          ]
-        }
-      ]
-    }
-  ],
   "primaryOutputs": [
     {
-      "path": "src/SkorubaIdentityServer4Admin.Admin/SkorubaIdentityServer4Admin.Admin.csproj"
+      "path": "src/Reborn.IdentityServer4.Admin/Reborn.IdentityServer4.Admin.csproj"
     },
     {
-      "path": "src/SkorubaIdentityServer4Admin.STS.Identity/SkorubaIdentityServer4Admin.STS.Identity.csproj"
+      "path": "src/Reborn.IdentityServer4.Admin.STS.Identity/Reborn.IdentityServer4.Admin.STS.Identity.csproj"
     },
     {
-      "path": "src/SkorubaIdentityServer4Admin.Admin.Api/SkorubaIdentityServer4Admin.Admin.Api.csproj"
+      "path": "src/Reborn.IdentityServer4.Admin.Api/Reborn.IdentityServer4.Admin.Api.csproj"
     },
     {
-      "path": "src/SkorubaIdentityServer4Admin.Admin.EntityFramework.Shared/SkorubaIdentityServer4Admin.Admin.EntityFramework.Shared.csproj"
+      "path": "src/Reborn.IdentityServer4.Admin.EntityFramework.Shared/Reborn.IdentityServer4.Admin.EntityFramework.Shared.csproj"
     },
     {
-      "path": "src/SkorubaIdentityServer4Admin.Admin.EntityFramework.MySql/SkorubaIdentityServer4Admin.Admin.EntityFramework.MySql.csproj"
+      "path": "src/Reborn.IdentityServer4.Admin.EntityFramework.MySql/Reborn.IdentityServer4.Admin.EntityFramework.MySql.csproj"
     },
     {
-      "path": "src/SkorubaIdentityServer4Admin.Admin.EntityFramework.PostgreSQL/SkorubaIdentityServer4Admin.Admin.EntityFramework.PostgreSQL.csproj"
+      "path": "src/Reborn.IdentityServer4.Admin.EntityFramework.PostgreSQL/Reborn.IdentityServer4.Admin.EntityFramework.PostgreSQL.csproj"
     },
     {
-      "path": "src/SkorubaIdentityServer4Admin.Admin.EntityFramework.SqlServer/SkorubaIdentityServer4Admin.Admin.EntityFramework.SqlServer.csproj"
+      "path": "src/Reborn.IdentityServer4.Admin.EntityFramework.SqlServer/Reborn.IdentityServer4.Admin.EntityFramework.SqlServer.csproj"
     },
     {
-      "path": "src/SkorubaIdentityServer4Admin.Shared/SkorubaIdentityServer4Admin.Shared.csproj"
+      "path": "src/Reborn.IdentityServer4.Admin.Shared/Reborn.IdentityServer4.Admin.Shared.csproj"
+    },
+    {
+      "path": "src/Reborn.IdentityServer4.Admin.AuditLogging/Reborn.IdentityServer4.Admin.AuditLogging.csproj"
+    },
+    {
+      "path": "src/Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework/Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.csproj"
     }
   ],
   "postActions": [
     {
-      "actionId": "6194F53C-D3C5-4144-9D8F-9DE221FAB9E3",
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
       "args": {
-        "primaryOutputIndexes": "0;1;2;3;4;5;6;7"
+        "primaryOutputIndexes": "0;1;2;3;4;5;6;7;8;9"
       },
       "continueOnError": false,
       "manualInstructions": [
@@ -141,7 +113,7 @@
           "text": "Run 'dotnet restore'"
         }
       ],
-      "actionId": "E5E303CC-ACC5-4602-A678-60EB5F1B0A09",
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
       "continueOnError": true
     }
   ]

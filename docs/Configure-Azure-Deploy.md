@@ -72,7 +72,7 @@ Name: WEBSITE_LOAD_CERTIFICATES
 Value: *
 ```
 
-Last step before deploy - we need to update `src/Reborn.IdentityServer4.STS.Identity/appsettings.json` and modify following lines:
+Last step before deploy - we need to update `src/Reborn.IdentityServer4.Admin.STS.Identity/appsettings.json` and modify following lines:
 
 ```json
 "CertificateConfiguration": {

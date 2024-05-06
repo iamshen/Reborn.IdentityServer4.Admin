@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Reborn.IdentityServer4.Admin.UI.Configuration.Constants;
 using Reborn.IdentityServer4.Admin.UI.ExceptionHandling;
-using Reborn.IdentityServer4.Shared.Configuration.Helpers;
+using Reborn.IdentityServer4.Admin.Shared.Configuration.Helpers;
 
 namespace Reborn.IdentityServer4.Admin.UI.Areas.AdminUI.Controllers;
 

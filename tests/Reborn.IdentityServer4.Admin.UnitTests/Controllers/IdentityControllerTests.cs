@@ -26,10 +26,10 @@ using Reborn.IdentityServer4.Admin.UI.Areas.AdminUI.Controllers;
 using Reborn.IdentityServer4.Admin.UI.Helpers;
 using Reborn.IdentityServer4.Admin.UI.Helpers.Localization;
 using Reborn.IdentityServer4.Admin.UnitTests.Mocks;
-using Reborn.IdentityServer4.AuditLogging.EntityFramework.Entities;
-using Reborn.IdentityServer4.AuditLogging.EntityFramework.Extensions;
-using Reborn.IdentityServer4.AuditLogging.EntityFramework.Repositories;
-using Reborn.IdentityServer4.AuditLogging.EntityFramework.Services;
+using Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.Entities;
+using Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.Extensions;
+using Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.Repositories;
+using Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.Services;
 using Xunit;
 
 namespace Reborn.IdentityServer4.Admin.UnitTests.Controllers;

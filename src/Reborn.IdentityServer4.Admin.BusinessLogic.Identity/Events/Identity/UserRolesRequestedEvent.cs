@@ -1,4 +1,4 @@
-﻿using Reborn.IdentityServer4.AuditLogging.Events;
+﻿using Reborn.IdentityServer4.Admin.AuditLogging.Events;
 
 namespace Reborn.IdentityServer4.Admin.BusinessLogic.Identity.Events.Identity;
 

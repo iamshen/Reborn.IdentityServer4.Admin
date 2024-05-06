@@ -76,7 +76,7 @@ This extensions method contains only one base policy for administration of whole
 
 ## 2) Security token service (STS)
 
-- `Reborn.IdentityServer4.STS.Identity` - `Startup.cs` - method `ConfigureServices`:
+- `Reborn.IdentityServer4.Admin.STS.Identity` - `Startup.cs` - method `ConfigureServices`:
 
 ### Configure DbContexts
 
@@ -94,7 +94,7 @@ AddIdentityServerStoresWithDbContexts<TConfigurationDbContext, TPersistedGrantDb
 
 ### Configuration of IdentityServer4 and Asp.Net Core Identity
 
-- `Reborn.IdentityServer4.STS.Identity` - `Startup.cs` - method `ConfigureServices`:
+- `Reborn.IdentityServer4.Admin.STS.Identity` - `Startup.cs` - method `ConfigureServices`:
 
 ```
 services.AddAuthenticationServices<IdentityServerConfigurationDbContext, IdentityServerPersistedGrantDbContext, AdminIdentityDbContext, UserIdentity, UserIdentityRole>(Environment, Configuration, Logger);

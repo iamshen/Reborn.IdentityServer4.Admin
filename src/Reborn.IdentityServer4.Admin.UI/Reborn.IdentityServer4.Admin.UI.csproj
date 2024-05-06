@@ -105,7 +105,7 @@
 		<ProjectReference Include="..\Reborn.IdentityServer4.Admin.BusinessLogic.Identity\Reborn.IdentityServer4.Admin.BusinessLogic.Identity.csproj" />
 		<ProjectReference Include="..\Reborn.IdentityServer4.Admin.BusinessLogic\Reborn.IdentityServer4.Admin.BusinessLogic.csproj" />
 		<ProjectReference Include="..\Reborn.IdentityServer4.Admin.EntityFramework.Configuration\Reborn.IdentityServer4.Admin.EntityFramework.Configuration.csproj" />
-		<ProjectReference Include="..\Reborn.IdentityServer4.Shared.Configuration\Reborn.IdentityServer4.Shared.Configuration.csproj" />
+		<ProjectReference Include="..\Reborn.IdentityServer4.Admin.Shared.Configuration\Reborn.IdentityServer4.Admin.Shared.Configuration.csproj" />
 	</ItemGroup>
 
 </Project>
