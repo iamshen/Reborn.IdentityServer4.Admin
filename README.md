@@ -1,4 +1,4 @@
-![Logo](docs/Images/Reborn.IdentityServer4.Admin-Logo-ReadMe.png)
+![Logo](https://raw.githubusercontent.com/iamshen/Reborn.IdentityServer4.Admin/master/docs/Images/Reborn.IdentityServer4.Admin-Logo-ReadMe.png)
 
 # Reborn.IdentityServer4.Admin
 
