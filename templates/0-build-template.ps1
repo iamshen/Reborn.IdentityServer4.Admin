@@ -56,16 +56,16 @@ Write-Host "打包项目模板成一个 NuGet 包"
 $templateNuspecPath = "template-build/Reborn.IdentityServer4.Admin.Templates.nuspec"
 nuget pack $templateNuspecPath -NoDefaultExcludes
 
-#####################################
-# Step 3
-Write-Host "卸载，然后安装新版本项目模板 Reborn.IdentityServer4.Admin.Templates"
-$templateLocalName = "Reborn.IdentityServer4.Admin.Templates.$packagesVersions.nupkg"
+# #####################################
+# # Step 3
+# Write-Host "卸载，然后安装新版本项目模板 Reborn.IdentityServer4.Admin.Templates"
+# $templateLocalName = "Reborn.IdentityServer4.Admin.Templates.$packagesVersions.nupkg"
 
-dotnet.exe new uninstall Reborn.IdentityServer4.Admin.Templates
-dotnet.exe new install $templateLocalName
+# dotnet.exe new uninstall Reborn.IdentityServer4.Admin.Templates
+# dotnet.exe new install $templateLocalName
 
-#####################################
-# Step 4
-Write-Host "创建用于固定项目名称的模板"
-dotnet new reborn.is4admin --name SampleIdentityServer --title "Sample IdentityServer4 Admin" --adminrole Administrator --adminclientid sample_identity_admin --adminclientsecret sample_admin_client_secret --force
+# #####################################
+# # Step 4
+# Write-Host "创建用于固定项目名称的模板"
+# dotnet new reborn.is4admin --name SampleIdentityServer --title "Sample IdentityServer4 Admin" --adminrole Administrator --adminclientid sample_identity_admin --adminclientsecret sample_admin_client_secret --force
 

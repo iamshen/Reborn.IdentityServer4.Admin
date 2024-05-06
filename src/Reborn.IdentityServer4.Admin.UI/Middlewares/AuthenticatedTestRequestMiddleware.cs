@@ -20,7 +20,7 @@ public class AuthenticatedTestRequestMiddleware
     {
         if (context.Request.Headers.Keys.Contains(TestAuthorizationHeader))
         {
-            var token = context.Request.Headers[TestAuthorizationHeader].Single();
+            var token = context.Request.Headers[TestAuthorizationHeader].FirstOrDefault();
             var jwt = new JwtSecurityToken(token);
             var claimsIdentity = new ClaimsIdentity(jwt.Claims, "Cookies");
             var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
