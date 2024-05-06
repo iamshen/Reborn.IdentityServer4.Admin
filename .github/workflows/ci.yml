@@ -21,6 +21,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore Reborn.IdentityServer4.Admin.sln
     - name: Build
-      run: dotnet build Reborn.IdentityServer4.Admin.sln --configuration Release --no-restore -p:Version=${{ steps.nbgv.outputs.SimpleVersion }}
+      run: dotnet build Reborn.IdentityServer4.Admin.sln --configuration Release --no-restore
     - name: Test
       run: dotnet test Reborn.IdentityServer4.Admin.sln --configuration Release --no-build --verbosity normal
