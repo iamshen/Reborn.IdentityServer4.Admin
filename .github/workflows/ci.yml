@@ -28,4 +28,4 @@ jobs:
     - name: Pack using .nuspec
       run: nuget pack ./templates/template-build/Reborn.IdentityServer4.Admin.Templates.nuspec -NoDefaultExcludes -OutputDirectory ./nupkg
     - name: Publish to NuGet
-      run: nuget push ./nupkg/*.nupkg --skip-duplicate -ApiKey ${{ secrets.NUGET_API_KEY }} -Source "https://api.nuget.org/v3/index.json"
+      run: nuget push ./nupkg/*.nupkg -SkipDuplicate -ApiKey ${{ secrets.NUGET_API_KEY }} -Source "https://api.nuget.org/v3/index.json"
