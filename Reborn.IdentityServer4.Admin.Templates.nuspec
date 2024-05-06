@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-  <metadata> 
+  <metadata>
     <id>Reborn.IdentityServer4.Admin.Templates</id>
-    <version>8.0.4</version>
+    <version>8.4.126.0</version>
     <authors>iamshen</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="file">LICENSE.md</license>
     <projectUrl>https://github.com/iamshen/Reborn.IdentityServer4.Admin</projectUrl>
+    <repository type="git" url="https://github.com/iamshen/Reborn.IdentityServer4.Admin.git" branch="master" />
     <icon>Icon.png</icon>
+    <readme>README.md</readme>
     <description>Templates for the administration of the IdentityServer4 and Asp.Net Core Identity</description>
     <language>zh-Hans</language>
     <tags>IdentityServer4, Admin, OpenIDConnect, OAuth2, Identity</tags>
@@ -15,4 +17,10 @@
       <packageType name="Template" />
     </packageTypes>
   </metadata>
+  <files>
+    <file src=".template.config\icon.png" />
+    <file src="README.md" />
+    <file src="CHANGELOG.md" />
+    <file src=".\**" target="content" exclude="**\bin\**;**\obj\**;**\.vs\**;**\.vscode\**;**\wwwroot\dist\**;content\Directory.Build.*;**\.git\**;**\.github\**;**\CODE_OF_CONDUCT.md;**\LICENSE;" />
+  </files>
 </package>
