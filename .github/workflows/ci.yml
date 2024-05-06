@@ -9,7 +9,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -17,10 +16,16 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.x
+        dotnet-version: '8.0.x'
+    - name: Install NuGet CLI
+      run: sudo apt-get install -y nuget
     - name: Restore dependencies
       run: dotnet restore Reborn.IdentityServer4.Admin.sln
     - name: Build
       run: dotnet build Reborn.IdentityServer4.Admin.sln --configuration Release --no-restore
     - name: Test
-      run: dotnet test Reborn.IdentityServer4.Admin.sln --configuration Release --no-build --verbosity normal
+      run: dotnet test Reborn.IdentityServer4.Admin.sln --configuration Release --no-build
+    - name: Pack using .nuspec
+      run: nuget pack ${{ github.workspace }}/template-build/Reborn.IdentityServer4.Admin.Templates.nuspec -NoDefaultExcludes -OutputDirectory ./nupkg
+    - name: Publish to NuGet
+      run: nuget push ./nupkg/*.nupkg -ApiKey ${{ secrets.NUGET_API_KEY }} -Source "https://api.nuget.org/v3/index.json"
