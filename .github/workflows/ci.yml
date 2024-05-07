@@ -10,7 +10,8 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-
+    permissions:
+      contents: write
     steps:
     - uses: actions/checkout@v4
     - name: Setup .NET
@@ -24,18 +25,20 @@ jobs:
     - name: Publish to NuGet
       run: .\nuget-publish.ps1 -apikey ${{ secrets.NUGET_API_KEY }}
       shell: pwsh
+    - name: Configure Git
+      run: |
+        git config user.name 'github-actions'
+        git config user.email 'github-actions@github.com'
     - name: Commit version bump
       run: |
-        git config --global user.name 'github-actions'
-        git config --global user.email 'github-actions@github.com'
         git add .
         git commit -m "Bump version [skip ci]"
-        git push https://${{ secrets.GH_TOKEN }}@github.com/iamshen/Reborn.IdentityServer4.Admin.git master
+        git push origin master
     - name: Tag new version
       run: |
         $xml = New-Object System.Xml.XmlDocument
         $xml.LoadXml((Get-Content Reborn.IdentityServer4.Admin.Templates.nuspec))
         $version = $xml.GetElementsByTagName('version')[0].InnerText
         git tag "v$version"
-        git push https://${{ secrets.GH_TOKEN }}@github.com/iamshen/Reborn.IdentityServer4.Admin.git "v$version"
+        git push origin "v$version"
       shell: pwsh
