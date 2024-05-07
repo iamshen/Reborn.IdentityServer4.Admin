@@ -47,6 +47,7 @@ $nuspec.Save($templateNuspec)
 
 # 从主分支克隆最新版本
 $gitProject = "https://github.com/iamshen/Reborn.IdentityServer4.Admin"
+$gitProjectFolder = "Temp.Reborn.IdentityServer4.Admin"
 git.exe clone --depth 1 $gitProject $gitProjectFolder -b master
 
 
@@ -77,6 +78,8 @@ Copy-Item ./$gitProjectFolder/tests/* $templateTests -recurse -force
 Copy-Item ./$gitProjectFolder/.template.config/* $templateConfig -recurse -force
 
 # Copy Solution Items
+Copy-Item ./$gitProjectFolder/shared $contentDirectory -recurse -force
+Copy-Item ./$gitProjectFolder/package $contentDirectory -recurse -force
 Copy-Item ./$gitProjectFolder/Directory.Build.props $contentDirectory -recurse -force
 Copy-Item ./$gitProjectFolder/Reborn.IdentityServer4.Admin.sln $contentDirectory -recurse -force
 Copy-Item ./$gitProjectFolder/Reborn.IdentityServer4.Admin.sln.DotSettings $contentDirectory -recurse -force
@@ -90,7 +93,7 @@ Copy-item -Force -Recurse "$templateNuspec" -Destination $contentDirectory
 
 ######################################
 # Step 2
-$templateNuspecPath = $contentDirectory/$templateNuspec
+$templateNuspecPath = "$contentDirectory/$templateNuspec"
 nuget pack $templateNuspecPath -NoDefaultExcludes
 ######################################
 # Step 3
@@ -111,6 +114,8 @@ Write-Output "finish publish $project_nupkg to nuget.org...";
 
 Remove-Item $project_nupkg -Force -recurse
 
-Remove-Item ./$gitProjectFolder -recurse -force
+Remove-Item $gitProjectFolder -recurse -force
+
+Remove-Item "./templates" -recurse -force
 
 Write-Warning "发布成功";
