@@ -77,13 +77,16 @@
     },
     {
       "path": "src/Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework/Reborn.IdentityServer4.Admin.AuditLogging.EntityFramework.csproj"
+    },
+    {
+      "path": "src/Reborn.IdentityServer4.Admin.UI/Reborn.IdentityServer4.Admin.UI.csproj"
     }
   ],
   "postActions": [
     {
       "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
       "args": {
-        "primaryOutputIndexes": "0;1;2;3;4;5;6;7;8;9"
+        "primaryOutputIndexes": "0;1;2;3;4;5;6;7;8;9;10"
       },
       "continueOnError": false,
       "manualInstructions": [
