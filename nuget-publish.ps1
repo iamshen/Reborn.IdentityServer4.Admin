@@ -108,6 +108,4 @@ Write-Output "finish publish $project_nupkg to nuget.org...";
 
 Remove-Item $project_nupkg -Force -recurse
 
-Remove-Item $gitProjectFolder -recurse -force
-
 Write-Warning "发布成功";
