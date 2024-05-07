@@ -108,4 +108,6 @@ Write-Output "finish publish $project_nupkg to nuget.org...";
 
 Remove-Item $project_nupkg -Force -recurse
 
+if ((Test-Path -Path ".\templates")) { Remove-Item ".\templates" -recurse -force }
+
 Write-Warning "发布成功";
