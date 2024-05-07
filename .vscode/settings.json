@@ -5,7 +5,12 @@
         "adminemail",
         "adminpassword",
         "adminrole",
+        "birthdate",
         "iamshen",
-        "idsrv"
+        "idsrv",
+        "Pkce",
+        "Serilog",
+        "swaggerui",
+        "zoneinfo"
     ]
 }
