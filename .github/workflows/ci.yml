@@ -17,8 +17,6 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '8.0.x'
-    - name: Install NuGet CLI
-      run: sudo apt-get install -y nuget
     - name: Restore dependencies
       run: dotnet restore Reborn.IdentityServer4.Admin.sln
     - name: Build
