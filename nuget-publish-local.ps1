@@ -45,6 +45,12 @@ $nuspec.package.metadata.version = $newVersion
 # 保存更改后的 .nuspec 文件
 $nuspec.Save($templateNuspec)
 
+# 从主分支克隆最新版本
+$gitProject = "https://github.com/iamshen/Reborn.IdentityServer4.Admin"
+$gitProjectFolder = "Temp.Reborn.IdentityServer4.Admin"
+git.exe clone --depth 1 $gitProject $gitProjectFolder -b master
+
+
 # 接下来，打包 NuGet 包
 
 $templateName = "templates"
@@ -67,18 +73,18 @@ if (!(Test-Path -Path $templateConfig)) { mkdir $templateConfig }
 Write-Output "Copy Project Template..."
 
 # Copy the latest src and tests to content
-Copy-Item ./src/* $templateSrc -recurse -force
-Copy-Item ./tests/* $templateTests -recurse -force
-Copy-Item ./.template.config/* $templateConfig -recurse -force
+Copy-Item ./$gitProjectFolder/src/* $templateSrc -recurse -force
+Copy-Item ./$gitProjectFolder/tests/* $templateTests -recurse -force
+Copy-Item ./$gitProjectFolder/.template.config/* $templateConfig -recurse -force
 
 # Copy Solution Items
-Copy-Item ./shared $contentDirectory -recurse -force
-Copy-Item ./package $contentDirectory -recurse -force
-Copy-Item ./Directory.Build.props $contentDirectory -recurse -force
-Copy-Item ./Reborn.IdentityServer4.Admin.sln $contentDirectory -recurse -force
-Copy-Item ./Reborn.IdentityServer4.Admin.sln.DotSettings $contentDirectory -recurse -force
-Copy-Item ./LICENSE.md $contentDirectory -recurse -force
-Copy-Item ./README.md $contentDirectory -recurse -force
+Copy-Item ./$gitProjectFolder/shared $contentDirectory -recurse -force
+Copy-Item ./$gitProjectFolder/package $contentDirectory -recurse -force
+Copy-Item ./$gitProjectFolder/Directory.Build.props $contentDirectory -recurse -force
+Copy-Item ./$gitProjectFolder/Reborn.IdentityServer4.Admin.sln $contentDirectory -recurse -force
+Copy-Item ./$gitProjectFolder/Reborn.IdentityServer4.Admin.sln.DotSettings $contentDirectory -recurse -force
+Copy-Item ./$gitProjectFolder/LICENSE.md $contentDirectory -recurse -force
+Copy-Item ./$gitProjectFolder/README.md $contentDirectory -recurse -force
 
 # Copy nuspec
 Write-Output "Copy Template.nuspec..."
@@ -109,5 +115,7 @@ Write-Output "finish publish $project_nupkg to nuget.org...";
 Remove-Item $project_nupkg -Force -recurse
 
 Remove-Item $gitProjectFolder -recurse -force
+
+Remove-Item "./templates" -recurse -force
 
 Write-Warning "发布成功";
