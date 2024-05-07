@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v4
@@ -25,7 +25,21 @@ jobs:
       run: dotnet build Reborn.IdentityServer4.Admin.sln --configuration Release --no-restore
     - name: Test
       run: dotnet test Reborn.IdentityServer4.Admin.sln --configuration Release --no-build
-    - name: Pack using .nuspec
-      run: nuget pack ./templates/template-build/Reborn.IdentityServer4.Admin.Templates.nuspec -NoDefaultExcludes -OutputDirectory ./nupkg
     - name: Publish to NuGet
-      run: nuget push ./nupkg/*.nupkg -SkipDuplicate -ApiKey ${{ secrets.NUGET_API_KEY }} -Source "https://api.nuget.org/v3/index.json"
+      run: .\nuget-publish.ps1 -apikey ${{ secrets.NUGET_API_KEY }}
+      shell: pwsh
+    - name: Commit version bump
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add .
+        git commit -m "Bump version [skip ci]"
+        git push https://${{ secrets.GH_TOKEN }}@github.com/iamshen/Reborn.IdentityServer4.Admin.git master
+    - name: Tag new version
+      run: |
+        $xml = New-Object System.Xml.XmlDocument
+        $xml.LoadXml((Get-Content Reborn.IdentityServer4.Admin.Templates.nuspec))
+        $version = $xml.GetElementsByTagName('version')[0].InnerText
+        git tag "v$version"
+        git push https://${{ secrets.GH_TOKEN }}@github.com/iamshen/Reborn.IdentityServer4.Admin.git "v$version"
+      shell: pwsh
