@@ -5,7 +5,7 @@
     "Web",
     "IdentityServer4",
     "Admin",
-    ".Net8"
+    ".Net Core"
   ],
   "name": "Reborn IdentityServer4 Admin",
   "identity": "Reborn.IdentityServer4.Admin",

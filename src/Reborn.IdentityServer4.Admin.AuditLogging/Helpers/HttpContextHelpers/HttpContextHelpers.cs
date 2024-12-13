@@ -35,10 +35,10 @@ namespace Reborn.IdentityServer4.Admin.AuditLogging.Helpers.HttpContextHelpers
             {
                 return null;
             }
-            IDictionary<string, string> dict = new Dictionary<string, string>();
+            Dictionary<string, string> dict = new();
             foreach (var k in col)
             {
-                dict.Add(k.Key, string.Join(", ", k.Value));
+                dict.Add(k.Key, string.Join(", ", k.Value.ToString()));
             }
             return dict;
         }

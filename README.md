@@ -7,14 +7,14 @@
 
 
 The administration for the IdentityServer4 and Asp.Net Core Identity <br>
-The application is written in the **Asp.Net Core MVC - using .NET 8**
+The application is written in the **Asp.Net Core MVC - using .NET 9**
 
 
 ## QuickStart 
 
 ### Requirements
 
-- [Install](https://www.microsoft.com/net/download/windows#/current) the latest .NET 8 SDK 
+- [Install](https://www.microsoft.com/net/download/windows#/current) the latest .NET 9 SDK 
 
 
 ### Installation via dotnet new template
@@ -54,6 +54,6 @@ options:
 
 # Note
 
-> This project, modified by iamshen from [IdentityServer4.Admin](https://github.com/skoruba/IdentityServer4.Admin), has been upgraded to .NET 8.
+> This project, modified by iamshen from [IdentityServer4.Admin](https://github.com/skoruba/IdentityServer4.Admin), has been upgraded to .NET 9.
 
-> The project also references [Reborn.IdentityServer4](https://www.nuget.org/packages/Reborn.IdentityServer4), which also supports .NET 8.
+> The project also references [Reborn.IdentityServer4](https://www.nuget.org/packages/Reborn.IdentityServer4), which also supports .NET 9.

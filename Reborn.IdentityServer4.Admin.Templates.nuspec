@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Reborn.IdentityServer4.Admin.Templates</id>
-    <version>8.0.127.2</version>
+    <version>9.0.0.0</version>
     <authors>iamshen</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="file">LICENSE.md</license>
